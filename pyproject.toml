@@ -3,15 +3,18 @@ name = "bugyo-cloud-proxy"
 version = "0.1.0"
 description = "OBC Bugyo Cloud proxy"
 authors = ["sengokyu <sengokyu+gh@gmail.com>"]
+homepage = "https://github.com/sengokyu/bugyo-cloud-proxy"
+repository = "https://github.com/sengokyu/bugyo-cloud-proxy"
 license = "MIT"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-bugyocloudclient = "^0.2.1"
-boto3 = "^1.16.46"
+bugyocloudclient = "^0.2.4"
 
 [tool.poetry.dev-dependencies]
 pytest-mock = "^3.4.0"
+autopep8 = "^1.5.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
