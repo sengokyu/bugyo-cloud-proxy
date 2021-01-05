@@ -1,3 +1,27 @@
+# Bugyo Cloud proxy
+
+## Testing
+
+```bash
+poetry run pytest
+```
+
+## Building
+
+```bash
+sam build --use-container
+```
+
+## Starting API locally
+
+```bash
+sam local start-api
+curl -X POST -d '{"tenant_code":"tenant","login_id":"user","password":"pass","clock_type":"clock_in"}' http://localhost:3000/bcproxy
+```
+
+
+
+
 # bugyo-cloud-proxy
 
 This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
