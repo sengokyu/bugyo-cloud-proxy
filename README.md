@@ -9,6 +9,7 @@ poetry run pytest
 ## Building
 
 ```bash
+poetry export -o bugyocloudproxy/requirements.txt
 sam build --use-container
 ```
 
